@@ -14,7 +14,9 @@ Comment tester l'appli :
 
 - Afficher la ville d'un user : User.find(id_du_user).city
 
-- ...
+- Afficher les messages reçus d'un user : User.find(id_du_user).received_messages
+
+-...
 
 ## Auteur
 
