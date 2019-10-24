@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application de Gossip
 
-Things you may want to cover:
+Comment tester l'appli :
 
-* Ruby version
+- Lancer dans le terminal la commande rails db:seed
 
-* System dependencies
+- Puis la commande rails console
 
-* Configuration
+- Afficher le(les) potins d'un utilisateur : User.find(id_du_user).gossips
 
-* Database creation
+- Afficher le(les) tags d'un potin : Gossip.find(id_du_gossip).tags
 
-* Database initialization
+- Afficher la ville d'un user : User.find(id_du_user).city
 
-* How to run the test suite
+- ...
 
-* Services (job queues, cache servers, search engines, etc.)
+## Auteur
 
-* Deployment instructions
-
-* ...
+ ~ Orgeret Florence ~
