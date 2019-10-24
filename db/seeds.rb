@@ -11,6 +11,7 @@ User.destroy_all
 Gossip.destroy_all
 Tag.destroy_all
 Subject.destroy_all
+PrivateMessage.destroy_all
 
 10.times do
   City.create(name: Faker::Address.city, zip_code: Faker::Number.number(digits: 5).to_s)
@@ -28,3 +29,8 @@ end
 20.times do 
   Subject.create(name: Faker::Hacker.verb, tag: Tag.all.sample, gossip: Gossip.all.sample)
 end
+
+5.times do
+  PrivateMessage.create(content: Faker::ChuckNorris.fact, sender: User.all.sample, recipient: User.all.sample)
+end
+
